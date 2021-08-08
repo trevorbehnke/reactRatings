@@ -5,7 +5,7 @@ function Star({
   handleHover,
   handleHoverLeave,
   handleClick,
-  isFilled
+  isFilled,
 }) {
   if (!handleHover) {
     return (

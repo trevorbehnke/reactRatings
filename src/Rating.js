@@ -7,14 +7,14 @@ class Rating extends Component {
     super(props);
     this.state = {
       dynamicValue: props.stars,
-      value: 0
+      value: 0,
     };
     this._colors = {
-      1: "#f44336",
-      2: "#FF5722",
-      3: "#FF9800",
-      4: "#FFC107",
-      5: "#FFEB3B"
+      1: "#CC3232",
+      2: "#DB7B2B",
+      3: "#E7B416",
+      4: "#99C140",
+      5: "#2DC936",
     };
     this._meanings = {
       0: "No Rating 🚫",
@@ -22,7 +22,7 @@ class Rating extends Component {
       2: "Mediocre 😒",
       3: "Average 😐",
       4: "Solid 🙂",
-      5: "Fantastic 🔥"
+      5: "Fantastic 🔥",
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
@@ -31,7 +31,7 @@ class Rating extends Component {
   handleClick(newValue) {
     this.setState({
       value: newValue,
-      dynamicValue: newValue
+      dynamicValue: newValue,
     });
   }
   handleMouseEnter(newValue) {
